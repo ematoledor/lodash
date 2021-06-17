@@ -34,7 +34,14 @@ const _ ={
     
     const paddedString = ' '.repeat(startPaddingLength) + string + ' '.repeat(endPaddingLength);
     return paddedString;
-  }
+  },
+
+  has(object, key){
+    const hasValue = object[key];
+    if (hasValue != undefined){
+      return true;
+    } return false;
+  },
 
 };
 
